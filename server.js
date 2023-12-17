@@ -8,25 +8,25 @@ const port = 3001;
 //CORS for specific origins
 app.use(cors({
   origin: ['http://localhost:3000'], 
-  methods: ['GET','POST'] ,
+  methods: ['GET'] ,
   credentials: true, 
 }));
 
 // API route
 app.get('/getTollData', async (req, res) => {
   try {
-    const { origin, destination,  vehicleType } = req.body;
+    // const { origin, destination,  vehicleType } = req.body;
 
     const response = await axios.post(
       'https://apis.tollguru.com/toll/v2/origin-destination-waypoints',
       {
         "from": {
-          "address": origin,
+          "address": "New York, NY",
           // "lat": 39.95209,
           // "lng": -75.16219
         },
         "to": {
-          "address": destination,
+          "address": "Philadelphia, Pennsylvania",
           // "lat": 40.71455,
           // "lng": -74.00715
         },
@@ -37,7 +37,7 @@ app.get('/getTollData', async (req, res) => {
         ],
         "serviceProvider": 'here',
         "vehicle": {
-          "type": vehicleType,
+          "type": "2AxlesAuto",
           "weight": {
             "value": 20000,
             "unit": "pound"
