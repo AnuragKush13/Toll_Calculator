@@ -7,7 +7,7 @@ const port = 3001;
 
 //CORS for specific origins
 app.use(cors({
-  origin: ['http://localhost:3000'], 
+  origin: ['http://localhost:3000','https://toll-calculator-iota.vercel.app'], 
   methods: ['GET'] ,
   credentials: true, 
 }));
