@@ -62,7 +62,7 @@ app.get('/getTollData', async (req, res) => {
       }
     );
     console.log(response.data);
-    res.json(response.data); // Send the data back to the client
+    res.json(response.data); 
   } catch (error) {
     console.error('Error fetching toll data:', error.message);
     res.status(500).json({ error: 'Internal Server Error' });
