@@ -13,7 +13,7 @@ app.use(cors({
 }));
 
 // API route
-app.get('/getTollData', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     // const { origin, destination,  vehicleType } = req.body;
 
