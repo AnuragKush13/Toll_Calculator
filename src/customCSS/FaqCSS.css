@@ -1,0 +1,72 @@
+/* TollCSS.css */
+
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.faq-banner {
+  background-color: rgb(41, 118, 118);
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column; /* Arrange content in a column */
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-banner p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.faq-banner p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.faq-item {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  background-color: rgba(90, 90, 90, 0.062);
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #7794995c; /* Lighter shade of rgb(41, 118, 118) */
+}
+
+.faq-answer {
+  padding: 15px;
+  line-height: 1.6;
+  font-size: 14px;
+  transition: max-height 0.3s;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-item.active .faq-question {
+  background-color: #56757286; /* Lighter shade of rgb(41, 118, 118) */
+}
+
+.faq-item.active .faq-answer {
+  max-height: 1000px; /* Adjust the value based on your content */
+}

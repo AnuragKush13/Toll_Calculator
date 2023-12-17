@@ -1,0 +1,158 @@
+
+/* TollCSS.css */
+
+.toll-container {
+    display: flex;
+    /* background-color: green; */
+    max-width: 1200px;
+  }
+  
+  .inputs-container {
+    flex: 1;
+    /* background-color: red; */
+    margin: 10px;
+    padding: 25px;
+    height: 350px;
+    width: 600px;
+    max-height: 350px;
+    
+  }
+  
+  .map-container {
+    flex: 1;
+    margin: 10px;
+    margin-bottom: 100%;
+    /* background-color: paleturquoise; */
+    height: 400px;
+  }
+  
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin-bottom:700px ;
+    margin-top: 0px;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+input{
+    height: 30px;
+    width: 200px;
+    border-radius: 8px;
+    color: rgb(233, 224, 224);
+    background-color: rgba(170, 221, 230, 0.155);
+    box-shadow: none;
+    border: none;
+    margin: 5px;
+    font-size: 14px;
+    align-items: flex-end;
+    padding: 3px;
+    padding-left: 10px;
+    
+
+} 
+
+select {
+    height: 36px;
+    width: 213px;
+    border-radius: 8px;
+    color: rgb(233, 224, 224);
+    background-color: rgba(170, 221, 230, 0.155);
+    box-shadow: none;
+    border: none;
+    margin: 5px;
+    font-size: 14px;
+    align-items: center;
+    padding: 3px;
+    padding-left: 10px;
+    
+    
+  }
+  select option {
+    background-color: rgba(170, 221, 230, 0.155);
+    color: rgb(0, 0, 0);
+  }
+  
+label{
+    font-size: 14px;
+    text-align: start;
+    font-weight: bold;
+
+}
+
+
+/* Default state */
+.button {
+    font-size: 16px;
+    margin-top: 50px;
+    /* margin-left: 65px; */
+    border-radius: 12px;
+    height: 40px;
+    width: 213px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    background-color: rgb(41, 118, 118);
+    /* margin-bottom: 60px; */
+    cursor: pointer; /* Add this to indicate the button is clickable */
+}
+
+/* Hover state */
+.button:hover {
+    background-color: rgb(31, 98, 98); /* Change color on hover */
+}
+
+/* Active state (clicked) */
+.button:active {
+    background-color: rgb(21, 78, 78); /* Change color on click */
+}
+
+
+
+.output-container {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output-container h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.output-container h1 {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.output-container pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+/* Style for the nested div with route information */
+.output-container > div {
+    margin-top: 20px;
+}
+
+/* Additional styling for specific elements inside the nested div */
+.output-container > div h3 {
+    color: #007bff;
+}
+
+.output-container > div pre {
+    background-color: #e0f7fa;
+}
