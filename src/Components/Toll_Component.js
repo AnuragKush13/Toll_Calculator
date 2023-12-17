@@ -90,23 +90,26 @@ const TollComponent = () => {
             <div className="map-container">
                 <Map_Container decodedPolyline={decodedPolyline} sourcePos={sourcePos} destinationPos={destinationPos} />
                 <div className="output-container">
-                <h1>Response from Toll guru API</h1>
-                <h3>Everything about the route and toll</h3>
+                <h3>Toll Details</h3>
+                
             {apiData && (
-                <div>
-                    <h3>fuelPrice:</h3>
-                    <pre>{JSON.stringify(apiData.summary.fuelPrice.value, null, 2)}</pre>
-                    <h3>Cheapest:</h3>
-                    <pre>{JSON.stringify(apiData.routes[0].summary.diffs.cheapest, null, 2)}</pre>
-
-                    <h3>Fastest:</h3>
-                    <pre>{JSON.stringify(apiData.routes[1].summary.diffs.fastest, null, 2)}</pre>
-                    <h3>Polyline:</h3>
-                    <pre>{JSON.stringify(apiData.routes[0].polyline, null, 2)}</pre>
-
-                    <h3>Polyline:</h3>
-                    <pre>{JSON.stringify(apiData.routes[1].polyline, null, 2)}</pre>
-                </div>
+               <div>
+               <label>Fuel Price</label>
+               <pre>{JSON.stringify(apiData.summary.fuelPrice.value, null, 2)}</pre>
+           
+               <label>Cheapest</label>
+               <pre>{JSON.stringify(apiData.routes[0].summary.diffs.cheapest, null, 2)}</pre>
+           
+               <label>Fastest</label>
+               <pre>{JSON.stringify(apiData.routes[1].summary.diffs.fastest, null, 2)}</pre>
+           
+               {/* <label>Polyline:</label>
+               <pre>{JSON.stringify(apiData.routes[0].polyline, null, 2)}</pre>
+           
+               <label>Polyline:</label>
+               <pre>{JSON.stringify(apiData.routes[1].polyline, null, 2)}</pre> */}
+           </div>
+           
             )}</div>
                 </div>
                 

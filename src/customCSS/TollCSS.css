@@ -119,22 +119,20 @@ label{
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
+    background-color: #34333325;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
+
 
 .output-container h3 {
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.output-container h1 {
-    color: #555;
-    font-size: 24px;
+    color: #b4b4b4;
+    font-size: 20px;
     margin-bottom: 16px;
 }
 
 .output-container pre {
-    background-color: #f5f5f5;
+    background-color: #f5f5f51a;
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
@@ -154,5 +152,6 @@ label{
 }
 
 .output-container > div pre {
-    background-color: #e0f7fa;
+    background-color: #e0f7fa1b;
+    width: 600px;
 }
